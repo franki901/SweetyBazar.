@@ -1,0 +1,67 @@
+:root {
+  --bg-color: #333;
+  --text-color: white;
+  --main-color: #ffd700; /* Color principal para enlaces resaltados */
+}
+
+.footer {
+  background: var(--bg-color);
+  color: white;
+  padding: 1rem 12%;
+  position: fixed; /* Posición fija para el footer */
+  bottom: 0; /* Ancla el footer en la parte inferior de la ventana gráfica */
+  width: 100%; /* Ancho completo */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  
+  .footer-text p {
+    font-size: 1rem;
+    color: white;
+  }
+
+  .home-sci {
+    position: absolute;
+    padding-left: 78rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 0% 0% 78rem;
+  }
+
+  .home-sci a {
+    
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    font-size: 20px;
+    color: var(--main-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+    padding-left: 10px;
+  }
+  
+  .home-sci a:hover {
+    color: var(--bg-color);
+  }
+  
+  .home-sci a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--main-color);
+    z-index: -1;
+    transition: 0.5s;
+  }
+  
+  .home-sci a:hover::before {
+    width: 100%;
+  }

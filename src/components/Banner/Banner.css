@@ -1,0 +1,38 @@
+.banner-container {
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+  }
+  
+  .banner {
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 100%; /* Ancho máximo del banner */
+  }
+  
+  .banner-image {
+    width: 100%; /* Ancho del 100% del contenedor */
+    max-height: 400px; /* Altura máxima de las imágenes */
+    object-fit: cover;
+  }
+  
+  .click-area-left,
+  .click-area-right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 20%; /* Ancho de la zona de clic */
+    cursor: pointer;
+    opacity: 0.5;
+    background-color: transparent;
+  }
+  
+  .click-area-left {
+    left: 0;
+  }
+  
+  .click-area-right {
+    right: 0;
+  }
+  

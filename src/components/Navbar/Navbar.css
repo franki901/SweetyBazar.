@@ -1,0 +1,88 @@
+/* Navbar.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --bg-color: #333;
+  --text-color: white;
+  --main-color: #ffd700; /* Color principal para enlaces resaltados */
+}
+
+.nav-container {
+  position: sticky;
+  z-index: 3;
+  top: 0;
+  opacity: 1; /* Establece la opacidad inicial aquí */
+  transition: opacity 0.5s ease; /* Agrega una transición suave */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--bg-color);
+}
+
+.navbar-logo {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 24px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar-logo:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  color: var(--main-color); /* Cambia el color al pasar el ratón sobre el logo */
+}
+
+.seeCarrito {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 30px !important;
+  transition: color 0.3s ease;
+}
+
+.seeCarrito:hover {
+  color: var(--main-color);
+  font-size: 36px; /* Cambia el tamaño de fuente al pasar el ratón sobre el carrito */
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  margin-left: 20px; /* Aumenta el espacio entre los enlaces */
+}
+
+.navbar a:hover {
+  color: var(--main-color); /* Cambia el color al pasar el ratón sobre los enlaces */
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.active {
+  /* Estilos cuando el enlace está activo (dentro de la página correspondiente) */
+  color: var(--main-color) !important;
+  /* Otros estilos, si los deseas */
+}
+
+/* Agrega una clase con opacidad */
+.navbar-transparent {
+  opacity: 0.75; /* Cambia esto según tu preferencia */
+  transition: opacity 0.7s ease; /* Agrega una transición suave */
+}
+

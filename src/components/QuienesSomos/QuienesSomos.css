@@ -1,0 +1,18 @@
+.quienessomos {
+	padding: 20px; /* Espaciado interno */
+	text-align: center;
+	margin: 30px auto; /* Márgenes exteriores (arriba y abajo automáticos, izquierda y derecha automáticos) */
+	max-width: 1500px; /* Ancho máximo del componente */
+	margin-bottom: 80px;
+  }
+
+  
+  .quienessomos h1 {
+	font-size: 2em; /* Tamaño de fuente para el título */
+  }
+  
+  .quienessomos p {
+	font-size: 1em; /* Tamaño de fuente para el párrafo */
+	margin-top: 10px; /* Espaciado superior para separar el párrafo del título */
+  }
+  
