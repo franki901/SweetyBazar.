@@ -45,8 +45,12 @@ const Navbar = () => {
           <NavLink className="tienda" to="/tienda" activeClassName="active">
             TIENDA
           </NavLink>
-          <NavLink className="miCuenta" to="/micuenta" activeClassName="active">
-            MI CUENTA
+          <NavLink
+            className="quienesSomos"
+            to="/quienessomos"
+            activeClassName="active"
+          >
+            QUIENES SOMOS
           </NavLink>
           <NavLink
             className="comoComprar"
@@ -56,9 +60,14 @@ const Navbar = () => {
             COMO COMPRAR
           </NavLink>
         </div>
-        <NavLink className="seeCarrito" to="/cart">
-          🛒
-        </NavLink>
+        <div className="icons">
+          <NavLink className="miCuenta" to="/miCuenta">
+            Cuenta
+          </NavLink>
+          <NavLink className="seeCarrito" to="/cart">
+            🛒
+          </NavLink>
+        </div>
       </nav>
     </div>
   );

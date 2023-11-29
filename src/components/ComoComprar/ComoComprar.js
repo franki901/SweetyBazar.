@@ -21,37 +21,28 @@ const ComoComprar = () => {
 
   const data = [
     {
-      id: 1,
-      imgUrl: "https://i.postimg.cc/PrMGqZwx/pexels-m-venter-1659437.jpg",
-      desc: "Some beautiful roads cannot be discovered without getting loss.",
-      name: "EXPLORE NATURE",
+      id: 3,
+      imgUrl: "/images/ComoComprar4-1.png",
+      desc: "Y en un plazo de 3 a 5 días ¡Lo recibís!",
+      name: "RECIBIR",
+    },
+    {
+      id: 4,
+      imgUrl: "/images/ComoComprar1-1.png",
+      desc: "Seleccionás el producto que quieras agregar al carrito.",
+      name: "AGREGAR AL CARRITO",
     },
     {
       id: 2,
-      imgUrl:
-        "https://i.postimg.cc/bw6KxhLf/pexels-eberhard-grossgasteiger-1062249.jpg",
-      desc: "Some beautiful roads cannot be discovered without getting loss.",
-      name: "EXPLORE NATURE",
+      imgUrl: "/images/ComoComprar2-1.png",
+      desc: "Elegís la forma de recibirlo (envio a domicilio, sucursal o retirar en local).",
+      name: "CÓMO RECIBIRLO",
     },
     {
-      id: 3,
-      imgUrl:
-        "https://i.postimg.cc/CMkTW9Mb/pexels-eberhard-grossgasteiger-572897.jpg",
-      desc: "Some beautiful roads cannot be discovered without getting loss.",
-      name: "EXPLORE NATURE",
-    },
-    {
-      id: 5,
-      imgUrl: "https://i.postimg.cc/6qdkn4bM/pexels-joyston-judah-933054.jpg",
-      desc: "Some beautiful roads cannot be discovered without getting loss.",
-      name: "EXPLORE NATURE",
-    },
-    {
-      id: 6,
-      imgUrl:
-        "https://i.postimg.cc/RVm59Gqy/pexels-roberto-nickson-2559941.jpg",
-      desc: "Some beautiful roads cannot be discovered without getting loss.",
-      name: "EXPLORE NATURE",
+      id: 1,
+      imgUrl: "/images/ComoComprar3-1.png",
+      desc: "Pagás a través de mercado pago o tarjeta de crédito o débito.",
+      name: "MÉTODO DE PAGO",
     },
   ];
 

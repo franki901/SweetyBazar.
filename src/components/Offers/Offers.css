@@ -1,0 +1,103 @@
+/* Restablecer estilos globales y configuración básica */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Utilizar Montserrat como la fuente predeterminada */
+  body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f8f8f8;
+  }
+  
+  /* Estilos para el componente Tienda */
+  .tienda-container {
+    text-align: center;
+  }
+  
+  .productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1500px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  
+  .producto {
+    border: 1px solid #ddd;
+    padding: 20px;
+    flex: 0 0 calc(33.33% - 20px);
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+  
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+  }
+  
+  .producto img {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+  }
+  
+  .producto .contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+  .producto .descripcion {
+    opacity: 0;
+    transition: opacity 0.3s;
+    margin-top: 10px;
+  }
+  
+  .producto:hover .descripcion {
+    opacity: 1;
+  }
+  
+  .producto .precio-y-boton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .producto .precio {
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+  
+.producto button {
+  background-color: #357cbf;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 5PX ;
+  transition: 0.3s;
+}
+  
+  .producto button:hover {
+    background-color: #265c93;
+    scale: 1.05;
+  }
+  
+  .ofertas-titulo {
+    font-size: 2rem;
+  }

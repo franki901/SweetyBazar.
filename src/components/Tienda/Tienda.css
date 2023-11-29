@@ -81,7 +81,7 @@ body {
 }
 
 .producto button {
-  background-color: #357cbf;
+  background-color:  rgb(63, 159, 255);
   color: white;
   padding: 10px 20px;
   font-size: 1.1rem;
@@ -89,11 +89,11 @@ body {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
-  margin-top: 15px;
+  margin: 15PX ;
   transition: 0.3s;
 }
 
 .producto button:hover {
-  background-color: #265c93;
+  background-color: #198cff;
   scale: 1.05;
 }

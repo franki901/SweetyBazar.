@@ -1,8 +1,8 @@
 import Navbar from "../Navbar/Navbar";
 import Banner from "../Banner/Banner";
 import Icons from "../Icons/Icons";
-import QuienesSomos from "../QuienesSomos/QuienesSomos";
 import Footer from "../Footer/Footer";
+import Offers from "../Offers/Offers";
 
 function Home() {
   const images = [
@@ -10,18 +10,14 @@ function Home() {
     "/images/banner2.png",
     "/images/banner3.png",
     "/images/banner4.png",
-    "/images/banner5.png",
-    "/images/banner6.png",
-    "/images/banner7.png",
-    "/images/banner8.png",
   ];
 
   return (
     <>
       <Navbar />
       <Banner images={images} />
+      <Offers />
       <Icons />
-      <QuienesSomos />
       <Footer />
     </>
   );

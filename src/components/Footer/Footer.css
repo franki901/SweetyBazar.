@@ -1,7 +1,7 @@
 :root {
   --bg-color: #333;
   --text-color: white;
-  --main-color: #ffd700; /* Color principal para enlaces resaltados */
+  --main-color: rgb(63, 159, 255); /* Color principal para enlaces resaltados */
 }
 
 .footer {
@@ -65,3 +65,5 @@
   .home-sci a:hover::before {
     width: 100%;
   }
+
+  

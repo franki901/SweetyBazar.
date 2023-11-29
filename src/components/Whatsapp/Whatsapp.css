@@ -1,0 +1,14 @@
+#whatsapp-logo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px; /* Ajusta el tamaño según tu necesidad */
+    transition: transform 0.4s, filter 0.4s;
+    margin-bottom: 50px;
+  }
+  
+  #whatsapp-logo:hover {
+    transform: scale(1.15); /* Escala al 110% en el hover */
+    filter: brightness(1.35); /* Brillo aumentado al 130% en el hover */
+  }
+  

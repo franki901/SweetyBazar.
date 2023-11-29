@@ -13,11 +13,9 @@ const Tienda = ({ productos }) => {
             {/* Renderizar la información del producto aquí */}
             <img src={products.thumbnail} alt={products.title} />
             <h3>{products.title}</h3>
-            <p className="descripcion">{products.description}</p>
-            <p className="precio">
-              Precio: <b>${products.price}</b>
-            </p>
-            <button>Añadir al carrito</button>
+            <p>{products.description}</p>
+            <p>Precio: ${products.price}</p>
+            <button>Ver ahora</button> <button>🛒</button>
           </div>
         ))}
       </div>

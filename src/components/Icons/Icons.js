@@ -7,7 +7,7 @@ const Icons = () => {
     <div className="imagenes">
       <div className="image-box">
         <a href="#">
-          <img src="/images/2.png" alt="Img1" title="Img1" />
+          <img src="/images/Icono1-1.png" alt="Img1" title="Img1" />
         </a>
         <h2>Tenemos lo que deseas</h2>
         <p>
@@ -17,7 +17,7 @@ const Icons = () => {
 
       <div className="image-box">
         <a href="#">
-          <img src="/images/3.png" alt="Img2" title="Img2" />
+          <img src="/images/Icono2-1.png" alt="Img2" title="Img2" />
         </a>
         <h2>Completa tu Carrito</h2>
         <p>
@@ -28,7 +28,7 @@ const Icons = () => {
 
       <div className="image-box">
         <a href="#">
-          <img src="/images/4.png" alt="Img3" title="Img3" />
+          <img src="/images/Icono4-1.png" alt="Img3" title="Img3" />
         </a>
         <h2>Recibí o Retira el pedido</h2>
         <p>Procesaremos tu pedido y coordinamos el envío/retiro del mismo.</p>
@@ -36,7 +36,7 @@ const Icons = () => {
 
       <div className="image-box">
         <a href="#">
-          <img src="/images/5.png" alt="Img4" title="Img4" />
+          <img src="/images/Icono3-1.png" alt="Img4" title="Img4" />
         </a>
         <h2>Sitio Seguro</h2>
         <p>Siempre Protegemos tus datos.</p>

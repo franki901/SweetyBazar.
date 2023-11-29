@@ -1,18 +1,73 @@
-.quienessomos {
-	padding: 20px; /* Espaciado interno */
-	text-align: center;
-	margin: 30px auto; /* Márgenes exteriores (arriba y abajo automáticos, izquierda y derecha automáticos) */
-	max-width: 1500px; /* Ancho máximo del componente */
-	margin-bottom: 80px;
+.quienes-somos-container {
+    text-align: center;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 70%; /* Ancho máximo del 70% */
+    margin: auto; /* Centrar horizontalmente */
+    margin-top: 60px; /* Añadido para separar el contenedor del navbar */
+    margin-bottom: 20px;
+}
+
+/* Botón principal */
+.quienes-somos-button {
+    background-color: rgb(63, 159, 255); /* Color del botón solicitado */
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px; /* Añadido para separar el botón del texto */
+}
+
+
+.quienes-somos-button:hover {
+    background-color: #198cff;
+    scale: 1.05;
   }
 
-  
-  .quienessomos h1 {
-	font-size: 2em; /* Tamaño de fuente para el título */
-  }
-  
-  .quienessomos p {
-	font-size: 1em; /* Tamaño de fuente para el párrafo */
-	margin-top: 10px; /* Espaciado superior para separar el párrafo del título */
-  }
-  
+/* Sección de información */
+.info-section {
+    max-width: 70%; /* Ancho máximo del 70% */
+    margin: auto; /* Centrar horizontalmente */
+    background: #ffffff;
+    padding: 40px;
+    padding-top: 10px;
+    margin: 20px auto; /* Centrar horizontalmente */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+/* Transición para la expansión */
+.info-section {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease;
+}
+
+/* Clase para sección expandida */
+.info-section.expanded {
+    max-height: 200px;
+}
+
+/* Otros cambios que consideré apropiados */
+.quienes-somos-title {
+    font-size: 2em; /* Ajuste del tamaño del título principal */
+}
+
+.quienes-somos-text {
+    font-size: 16px;
+    color: #333; /* Cambio de color del texto principal */
+    margin-top: 20px;
+}
+
+.quienes-somos-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    margin: 20px;
+}

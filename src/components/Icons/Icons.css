@@ -15,8 +15,8 @@
 .image-box {
   text-align: center;
   flex: 1;
-  max-width: 392px; /* Aumenta el tamaño máximo para la caja */
-  padding: 52px; /* Aumenta el padding para mayor espacio alrededor de la caja */
+  max-width: 360px; /* Aumenta el tamaño máximo para la caja */
+  padding: 20px; /* Aumenta el padding para mayor espacio alrededor de la caja */
   transition: transform 0.3s, cursor 0.3s;
   box-sizing: border-box;
 }
@@ -24,15 +24,19 @@
 .image-box img {
   width: 100%;
   height: auto;
-  max-width: 70%;
+  max-width: 60%;
   border-radius: 50%;
-  clip-path: circle(43%);
+  clip-path: circle(40%);
 }
 
-.image-box h2, 
+.image-box h2 {
+  font-size: 1.3rem;
+}
+
 .image-box p {
   margin: 0;
-  padding: 5px 0;
+  font-size: 1rem;
+  padding: 10px 0;
 }
 
 .image-box:hover {

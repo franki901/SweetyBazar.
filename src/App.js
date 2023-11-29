@@ -4,8 +4,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Tienda from "./components/Tienda/Tienda";
 import ComoComprar from "./components/ComoComprar/ComoComprar";
 import MiCuenta from "./components/MiCuenta/MiCuenta";
-import products from "./components/products.json"; // Importa el JSON de productos
+import products from "./components/products.json";
 import NotFound from "./components/NotFound/NotFound";
+import QuienesSomos from "./components/QuienesSomos/QuienesSomos";
 
 function App() {
   return (
@@ -18,9 +19,10 @@ function App() {
           element={<Tienda productos={products.producto} />}
         />
         <Route path="/micuenta" element={<MiCuenta />} />
-        <Route path="/comocomprar" element={<ComoComprar />} />
+        <Route path="/quienessomos" element={<QuienesSomos />} />
         <Route path="/cart" element={<CartContent />} />
 
+        <Route path="/comocomprar" element={<ComoComprar />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
