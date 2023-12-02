@@ -1,24 +1,27 @@
+/* Restablecer estilos globales y configuración básica */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos para el componente Icons */
 .imagenes {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   background-color: #f0f0f0;
   padding: 20px 0;
 }
 
-.image-container {
-  display: flex;
-  justify-content: space-around; /* Cambia space-between a space-around */
-  max-width: 1000px; /* Ajusta el ancho máximo según tu diseño */
-  margin: 0 auto;
-}
-
 .image-box {
   text-align: center;
   flex: 1;
-  max-width: 360px; /* Aumenta el tamaño máximo para la caja */
-  padding: 20px; /* Aumenta el padding para mayor espacio alrededor de la caja */
+  max-width: 360px;
+  padding: 20px;
   transition: transform 0.3s, cursor 0.3s;
   box-sizing: border-box;
+  margin: 10px;
 }
 
 .image-box img {
@@ -42,4 +45,20 @@
 .image-box:hover {
   transform: scale(1.1);
   cursor: pointer;
+}
+
+/* Media Query para Pantallas Pequeñas */
+@media screen and (max-width: 768px) {
+  .imagenes {
+    padding: 10px 0;
+  }
+
+  .image-box {
+    max-width: 100%;
+    padding: 10px; /* Ajusta el espacio interior */
+  }
+
+  .image-box img {
+    max-width: 80%; /* Ajusta el tamaño de la imagen */
+  }
 }

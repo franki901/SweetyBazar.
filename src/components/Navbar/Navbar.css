@@ -7,20 +7,23 @@
   outline: none;
   scroll-behavior: smooth;
   font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
   --bg-color: #333;
   --text-color: white;
-  --main-color: #ffd700; /* Color principal para enlaces resaltados */
+  --main-color: #ffd700;
 }
 
 .nav-container {
   position: sticky;
   z-index: 3;
   top: 0;
-  opacity: 1; /* Establece la opacidad inicial aquí */
-  transition: opacity 0.5s ease; /* Agrega una transición suave */
+  opacity: 1;
+  transition: opacity 0.5s ease;
 }
 
 .navbar {
@@ -42,7 +45,7 @@
 .navbar-logo:hover {
   transform: scale(1.1);
   transition: 0.3s;
-  color: var(--main-color); /* Cambia el color al pasar el ratón sobre el logo */
+  color: var(--main-color);
 }
 
 .seeCarrito {
@@ -54,7 +57,7 @@
 
 .seeCarrito:hover {
   color: var(--main-color);
-  font-size: 36px; /* Cambia el tamaño de fuente al pasar el ratón sobre el carrito */
+  font-size: 36px;
 }
 
 .navbar a {
@@ -63,23 +66,75 @@
   font-size: 16px;
   font-weight: bold;
   transition: color 0.3s ease;
-  margin-left: 20px; /* Aumenta el espacio entre los enlaces */
+  margin-left: 20px;
 }
 
 .navbar a:hover {
-  color: var(--main-color); /* Cambia el color al pasar el ratón sobre los enlaces */
+  color: var(--main-color);
   transform: scale(1.1);
   transition: 0.3s;
 }
 
 .active {
-  /* Estilos cuando el enlace está activo (dentro de la página correspondiente) */
   color: var(--main-color) !important;
-  /* Otros estilos, si los deseas */
 }
 
-/* Agrega una clase con opacidad */
 .navbar-transparent {
-  opacity: 0.75; /* Cambia esto según tu preferencia */
-  transition: opacity 0.7s ease; /* Agrega una transición suave */
+  opacity: 0.75;
+  transition: opacity 0.7s ease;
+}
+
+/* ... Otros estilos ... */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--bg-color);
+}
+
+.navbar-header {
+  display: flex;
+  align-items: center;
+}
+
+/* ... Otros estilos ... */
+
+/* Media Query para Pantallas Pequeñas */
+@media screen and (max-width: 768px) {
+  *.navbar {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+      font-size: 12px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+  }
+
+  .navbar-logo {
+    margin-bottom: 10px;
+  }
+
+  .navbar-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .icons {
+    /* ... Otros estilos ... */
+    width: 100%;
+    padding: 5px; /* Ajusta según sea necesario */
+  }
+
+  .pony {
+    /* ... Otros estilos ... */
+    width: 100%;
+    padding: 5px; /* Ajusta según sea necesario */
+  }
+
 }

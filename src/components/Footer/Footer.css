@@ -66,4 +66,16 @@
     width: 100%;
   }
 
+  @media screen and (max-width: 768px) {
+    .footer-text p {
+      display: none; /* Oculta el texto en dispositivos móviles */
+    }
   
+    .home-sci {
+      padding: 0 12%; /* Ajusta el espacio en dispositivos móviles */
+    }
+  
+    .home-sci a {
+      margin: 0 7px; /* Ajusta el espacio entre los íconos en dispositivos móviles */
+    }
+  }
